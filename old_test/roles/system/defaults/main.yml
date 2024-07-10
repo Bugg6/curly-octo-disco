@@ -1,0 +1,16 @@
+username: jexx
+password: changeme
+shell: /bin/zsh
+packages:
+  - nano
+  - neofetch
+  - net-tools
+  - htop
+  - tmux
+  - speedtest-cli
+
+lan_subnet: 192.168.86.0/24
+
+lan_base: "{{ lan_subnet | regex_replace('.0/[0-9]{2}', '') }}"
+
+homeserver_ip: "{{ lan_base }}.233"

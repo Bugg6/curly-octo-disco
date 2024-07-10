@@ -1,0 +1,15 @@
+username: jexx
+packages:
+  - nano
+  - neofetch
+  - net-tools
+  - htop
+  - tmux
+  - speedtest-cli
+shell: /bin/zsh
+
+pip_install_pacakges:
+  - name: docker
+
+docker_apt_gpg_key: "https://download.docker.com/linux/ubuntu/gpg"
+docker_apt_repository: "deb https://download.docker.com/linux/ubuntu jammy stable"
